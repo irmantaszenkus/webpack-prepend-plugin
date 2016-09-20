@@ -1,6 +1,6 @@
 # webpack-prepend-plugin
 
-Prepends file`s contents to each entry chunk. Used for prepending javascript error tracking code so it would be initialized as early as possible.
+Prepends file's contents to each entry chunk. Used for prepending javascript error tracking code so it would be initialized as early as possible.
 
 ## Usage
 
