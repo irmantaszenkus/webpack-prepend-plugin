@@ -1,0 +1,24 @@
+{
+  "name": "prepend-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Prepends file contents to entry chunks",
+  "main": "lib/PrependPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irmiz/webpack-prepend-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "prepend"
+  ],
+  "author": "Irmantas Zenkus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irmiz/webpack-prepend-plugin/issues"
+  },
+  "homepage": "https://github.com/Irmiz/webpack-prepend-plugin#readme"
+}
