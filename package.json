@@ -1,6 +1,6 @@
 {
   "name": "prepend-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prepends file contents to entry chunks",
   "main": "lib/PrependPlugin.js",
   "scripts": {
