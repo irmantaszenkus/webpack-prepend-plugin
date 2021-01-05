@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Irmiz/webpack-prepend-plugin/issues"
   },
-  "homepage": "https://github.com/Irmiz/webpack-prepend-plugin#readme"
+  "homepage": "https://github.com/Irmiz/webpack-prepend-plugin#readme",
+  "dependencies": {
+    "schema-utils": "^1.0.0"
+  }
 }
