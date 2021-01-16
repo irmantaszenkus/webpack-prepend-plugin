@@ -1,0 +1,88 @@
+{
+  "definitions": {
+    "Rule": {
+      "description": "Filtering rule as regex or string.",
+      "anyOf": [
+        {
+          "instanceof": "RegExp",
+          "tsType": "RegExp"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "Rules": {
+      "description": "Filtering rules.",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "description": "A rule condition.",
+            "oneOf": [
+              {
+                "$ref": "#/definitions/Rule"
+              }
+            ]
+          }
+        },
+        {
+          "$ref": "#/definitions/Rule"
+        }
+      ]
+    }
+  },
+  "title": "PrependPluginArgument",
+  "anyOf": [
+    {
+      "description": "The path to the file to include.",
+      "type": "string",
+      "minLength": 1
+    },
+    {
+      "title": "PrependPluginOptions",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "filePath": {
+          "description": "Specifies the path to the file to include.",
+          "anyOf": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "entryOnly": {
+          "description": "If true, the file will only be added to the entry chunks.",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "Exclude all modules matching any of these conditions.",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/Rules"
+            }
+          ]
+        },
+        "include": {
+          "description": "Include all modules matching any of these conditions.",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/Rules"
+            }
+          ]
+        },
+        "test": {
+          "description": "Include all modules that pass test assertion.",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/Rules"
+            }
+          ]
+        }
+      },
+      "required": ["filePath"]
+    }
+  ]
+}

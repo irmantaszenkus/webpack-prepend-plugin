@@ -1,6 +1,6 @@
 {
   "name": "prepend-webpack-plugin",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Prepends file contents to entry chunks",
   "main": "lib/PrependPlugin.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Irmiz/webpack-prepend-plugin/issues"
   },
-  "homepage": "https://github.com/Irmiz/webpack-prepend-plugin#readme"
+  "homepage": "https://github.com/Irmiz/webpack-prepend-plugin#readme",
+  "dependencies": {
+    "schema-utils": "^1.0.0"
+  }
 }
